@@ -1,8 +1,19 @@
 body {
-  font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(227, 236, 240);
   margin: 0;
   padding: 0;
+}
+.site-heading{
+  display: flex;
+  justify-content: center;
+  /* background-color:rgb(0, 121, 121, 0.2); */
+  padding-left: 1rem;
+  /* border-radius: 5px; */
+  border-bottom: solid white;
+
+
+ 
 }
 
 h1,
@@ -11,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -22,13 +33,16 @@ h6 {
 
 img {
   width: 100%;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 5px rgb(192, 199, 201);
 }
 
 .main-nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  /* margin: 0; */
+  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -42,8 +56,16 @@ img {
   color: inherit;
   text-decoration: none;
   font-size: 1.25rem;
+  background-color:rgb(0, 121, 121, 0.2);
+  /* border-radius: 5px; */
+  padding: 0.5rem;
+  border-bottom: solid white;
+  
+  
 }
-
+.main-nav ul li a:nth-child(odd) {
+border-right: solid white;
+}
 form input,
 form textarea {
   display: block;
@@ -64,8 +86,59 @@ form button {
   border: 2px solid black;
   padding: 1rem;
   text-transform: uppercase;
+  border-radius: 5px;
+}
+form>button:hover {
+  background-color: rgb(0, 121, 121);
+  border-radius: 5px;
+  color: aliceblue;
+  border: none;
 }
 
 .site-footer {
   padding: 2rem 0;
+}
+.skip-links {
+/* background-color: rgb(0, 215, 215);
+color: azure;
+width: bold;
+position: absolute;
+top: -10px;
+left: 10px; */
+list-style: none;
+/* padding: 0.5rem;
+border-radius: 10px; */
+}
+.skip-links a {
+  text-decoration: none;
+  color: rgb(255, 249, 249);
+  position: absolute;
+  top: -50px;
+  background-color: rgb(144, 12, 12);
+padding: 0.5rem;
+}
+.skip-links a:focus {
+top: 20px;
+}
+
+
+
+nav>ul>li>a:hover,
+nav>ul>li>a:focus  {
+  background-color: rgb(0, 121, 121);
+
+  color: aliceblue;
+  border: none;
+}
+
+footer {
+  display: flex; 
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+
+footer>a {
+  font-weight: bold;
+ 
 }
